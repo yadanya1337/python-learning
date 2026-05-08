@@ -134,12 +134,24 @@
 #         counts[word] = 1
 # print(counts)
 
-user = {
-    "name": "Alice",
-    "age": 30,
-    "city": "Paris",
-    "occupation": "engineer",
-}
+# user = {
+#     "name": "Alice",
+#     "age": 30,
+#     "city": "Paris",
+#     "occupation": "engineer",
+# }
 
-for key, value in user.items():
-    print(key, value)
+# for key, value in user.items():
+#     print(key, value)
+
+products = [
+    {"name": "apple", "price": 1.50, "quantity": 10},
+    {"name": "bread", "price": 3.20, "quantity": 5},
+    {"name": "milk", "price": 2.80, "quantity": 7},
+    {"name": "eggs", "price": 4.50, "quantity": 12},
+]
+
+total = 0
+for product in products:
+    total = total + product["price"] * product["quantity"]
+print(total) 
